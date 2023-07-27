@@ -1,2 +1,46 @@
 @import url('./fonts.css');
 @import url('./commons.css');
+@import url('./variables.css');
+
+/* Our objective */
+
+.our-objective {
+    background-color: var(--color-gray);
+}
+
+.objective-container {
+    display: flex;
+}
+
+.content {
+    padding: 2rem;
+}
+
+.objective-title {
+    font-size: var(--font-93);
+    font-weight: 100;
+}
+
+.objective-paragraph {
+    font-size: 1.6rem;
+    margin: 3rem 0 4rem 0;
+}
+
+@media screen and (max-width: 767px) {
+    .objective-container {
+        flex-direction: column-reverse;
+    }
+
+    .objective-title {
+        margin-top: 3rem;
+    }
+
+    .objective-title span {
+        display: block;
+    }
+
+    .objective-media {
+        height: 40rem;
+        width: 100%;
+    }
+}

@@ -13,8 +13,9 @@
 html {
     color: #34617a;
     font-size: calc(100vw / 1920 * 10);
+    font-weight: 100;
     font-family: 'Gothic';
-    line-height: 1;
+    line-height: 1.2;
 }
 
 ul {
@@ -30,4 +31,32 @@ img {
     height: 100%;
     object-fit: cover;
     width: 100%;
+}
+
+.container {
+    max-width: 82rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn-border {
+    border: .1rem solid var(--color-blue);
+    padding: 1.5rem 3.5rem;
+    transition: all ease-in .1s;
+}
+
+.btn-border:hover {
+    background-color: var(--color-blue);
+    color: var(--color-white);
+}
+
+
+@media screen and (max-width: 767px) {
+    html {
+        font-size: calc(100vw / 640 * 16);
+    }
+
+    .container {
+        max-width: 82rem;
+    }
 }
