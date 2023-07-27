@@ -6,45 +6,81 @@
 
 header {
     display: flex;
+    flex-direction: column;
 }
   
 .section_header {
     display: flex;
     width: 100%;
-    justify-content: space-between;
     flex-direction: column;
     justify-content: space-between;
 }
 
 .logo_header {
-    width: 225px;
-    height: 62px;
+    width: 15rem;
+    height: 4rem;
 }
 
 .navbar {
     display: flex;
     justify-content: space-between;
-    font-size: 22px;
+    align-items: center;
+    font-size: 1.4rem;
     font-weight: 400;
     margin-bottom: 5rem;
+    margin-top: 5rem;
+    flex-wrap: wrap;
 }
 
-.navbar ul {
+.menu {
     display: flex;
     flex-direction: row;
     align-items: center;
+
 }
 
-.navbar ul li {
+.menu li {
     margin: 2rem;
 }
 
 .title_header {
-    font-size: 70px;
+    order: 1;
+    font-size: 4.4rem;
+    font-weight: 100;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     margin-bottom: 5rem;
+    margin-top: 5rem;
+    flex-basis: 100%;
+}
+
+@media screen and (max-width: 767px) {
+    .navbar{
+        flex-direction: column;
+    }
+
+    .title_header {
+        align-items: center;
+        font-size: 3.125rem;
+        flex-basis: auto;
+        margin-top: 2rem;
+        margin-bottom: 4rem;
+        order: 0;
+    }
+
+    .menu {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .menu li {
+        width: 100%;
+        padding: .7rem;
+        margin: 0;
+        border-bottom: .01rem solid var(--color-blue);
+        text-align: center;
+    }
 }
 
 /* Our objective */
