@@ -6,6 +6,7 @@
 
 header {
     display: flex;
+    flex-direction: column;
 }
   
 .section_header {
@@ -41,6 +42,7 @@ header {
 
 .title_header {
     font-size: 70px;
+    font-weight: 100;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
