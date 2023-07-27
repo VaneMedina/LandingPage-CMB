@@ -24,8 +24,20 @@ ul {
 
 a {
     color: inherit;
+    display: inline-block;
     text-decoration: none;
 }
+
+input {
+    border: none;
+}
+
+input:focus {
+    box-shadow: none;
+    outline: 0;
+}
+
+p { line-height: 1.5; }
 
 img {
     height: 100%;
@@ -57,6 +69,6 @@ img {
     }
 
     .container {
-        max-width: 82rem;
+        max-width: 37rem;
     }
 }
