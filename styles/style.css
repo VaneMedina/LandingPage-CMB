@@ -1,48 +1,91 @@
 @import url('./fonts.css');
 @import url('./commons.css');
-
+@import url('./variables.css');
 
 /* SECTION HEADER */
 
 header {
-  display: flex;
+    display: flex;
 }
-
+  
 .section_header {
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-  flex-direction: column;
-  justify-content: space-between;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .logo_header {
-  width: 225px;
-  height: 62px;
+    width: 225px;
+    height: 62px;
 }
 
 .navbar {
-  display: flex;
-  justify-content: space-between;
-  font-size: 22px;
-  font-weight: 400;
-  margin-bottom: 5rem;
+    display: flex;
+    justify-content: space-between;
+    font-size: 22px;
+    font-weight: 400;
+    margin-bottom: 5rem;
 }
 
 .navbar ul {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 .navbar ul li {
-  margin: 2rem;
+    margin: 2rem;
 }
 
 .title_header {
-  font-size: 70px;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  margin-bottom: 5rem;
+    font-size: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-bottom: 5rem;
+}
+
+/* Our objective */
+
+.our-objective {
+    background-color: var(--color-gray);
+}
+
+.objective-container {
+    display: flex;
+}
+
+.content {
+    padding: 2rem;
+}
+
+.objective-title {
+    font-size: var(--font-93);
+    font-weight: 100;
+}
+
+.objective-paragraph {
+    font-size: 1.6rem;
+    margin: 3rem 0 4rem 0;
+}
+
+@media screen and (max-width: 767px) {
+    .objective-container {
+        flex-direction: column-reverse;
+    }
+
+    .objective-title {
+        margin-top: 3rem;
+    }
+
+    .objective-title span {
+        display: block;
+    }
+
+    .objective-media {
+        height: 40rem;
+        width: 100%;
+    }
 }
