@@ -47,18 +47,37 @@ header {
     margin-bottom: 5rem;
 }
 
+/* About section */
+
+.about-cmb {
+    padding: 8rem 0;
+}
+
+.about-logo {
+    height: 2.938rem;
+    margin: 0 auto 2rem auto;
+    width: 10.813rem;
+}
+
+.about-paragraph {
+    font-size: 1.438rem;
+    margin: auto;
+    max-width: 40.625rem;
+    text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+    .about-cmb {
+        padding: 6rem 0;
+    }
+}
+
 /* Our objective */
 
 .our-objective {
+    align-items: center;
     background-color: var(--color-gray);
-}
-
-.objective-container {
     display: flex;
-}
-
-.content {
-    padding: 2rem;
 }
 
 .objective-title {
@@ -66,26 +85,30 @@ header {
     font-weight: 100;
 }
 
+.objective-title span {
+    display: block;
+}
+
 .objective-paragraph {
-    font-size: 1.6rem;
+    font-size: 1.625rem;
     margin: 3rem 0 4rem 0;
+    max-width: 40.5rem;
+}
+
+.objective-media {
+    height: 54.875rem;
+    width: 68.813rem;
 }
 
 @media screen and (max-width: 767px) {
-    .objective-container {
+    .our-objective {
         flex-direction: column-reverse;
     }
 
-    .objective-title {
-        margin-top: 3rem;
-    }
-
-    .objective-title span {
-        display: block;
-    }
+    .content { margin: 5rem 0; }
 
     .objective-media {
-        height: 40rem;
+        height: 31.875rem;
         width: 100%;
     }
 }
