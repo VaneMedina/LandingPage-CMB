@@ -268,3 +268,125 @@ header {
         margin: auto;
     }
 }
+
+
+/* Section Contact Us */
+
+.contact-us {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.contact-head {
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+
+}
+.contact-form {
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.title-contact-us {
+    font-size: var(--font-93);
+    font-weight: 100;
+    margin: 7rem 0 2.5rem 0;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.title-contact-us span {
+    display: flex;
+}
+
+.icon-contact-us {
+    height: 6.25rem;
+    width: 6.25rem;
+}
+
+form{
+    margin-top: 7rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-self: flex-end;
+    width: 100%;
+    flex-basis: 50%;
+}
+
+.input-form {
+    padding: 1rem;
+    width: 47%;
+    margin: 0 1.5rem 1.5rem 0;
+    background-color: var(--color-flash-white);
+}
+
+.input-form:nth-child(2), .input-form:nth-child(4) {
+    align-self: end;
+}
+
+.input-form:nth-child(5), .input-form:nth-child(6) {
+    width: 100%;
+}
+
+.input-form::placeholder {
+    font-size: 1.188rem;
+    color: var(--color-blue);        
+}
+
+.send-btn {
+    margin: 2rem 1.5rem 0 0;
+    width: 100%;
+    text-align: end;
+}
+
+.btn-submit {
+    padding: 1rem 4rem;
+    background-color: var(--color-blue);
+    color: var(--color-white);
+    font-size: 1rem;
+}
+
+@media screen and (max-width: 767px) {
+    .contact-us {
+        display: flex;
+        flex-direction: column;
+    }
+
+    form{
+        margin-top: 3.5rem;
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        width: 100%;
+    }
+
+    .input-form {
+        padding: 1.5rem;
+        width: 100%;
+        margin-bottom: 1.5rem;
+        background-color: var(--color-flash-white);
+    }
+    
+    .input-form::placeholder {
+        font-size: 1.188rem;
+        color: var(--color-blue);        
+    }
+
+    .send-btn {
+        margin-top: 2rem;
+        width: 100%;
+        text-align: end;
+    }
+
+    .btn-submit {
+        padding: .7rem 3rem;
+        font-size: 1rem;
+    }
+
+    textarea {
+        min-height: 19.625rem;
+    }
+}

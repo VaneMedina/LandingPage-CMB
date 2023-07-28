@@ -28,13 +28,19 @@ a {
     text-decoration: none;
 }
 
-input {
+input, textarea {
     border: none;
 }
 
-input:focus {
+input:focus, textarea:focus {
     box-shadow: none;
     outline: 0;
+}
+
+textarea {
+    font-family: 'Gothic';
+    resize: vertical;
+    min-height: 22.188rem;
 }
 
 p { line-height: 1.5; }
@@ -62,10 +68,17 @@ img {
     color: var(--color-white);
 }
 
+<<<<<<< HEAD
 .center {
     align-items: center;
     display: flex;
     justify-content: space-between;
+=======
+button {
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+>>>>>>> e7af4df84aeb157dba28e7cd3b9967ae6bc0db17
 }
 
 
