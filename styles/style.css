@@ -438,7 +438,7 @@ form{
         margin-bottom: 3rem;
     }
 
-    .menu li {
+    .menu-footer li {
         border-bottom: .01rem solid var(--color-white);
     }
 
