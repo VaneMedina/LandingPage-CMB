@@ -179,14 +179,15 @@ header {
     content: '';
     height: 100%;
     position: absolute;
+    left: 0;
     bottom: 0;
     width: 101.313rem;
     z-index: -1;
 }
 
-.treatments-article:nth-child(1)::before {
+/* .treatments-article:nth-child(1)::before {
     background-color: var(--color-blue);
-}
+} */
 
 .treatments-article:nth-child(2)::before {
     background-color: var(--color-steel-teal);
@@ -242,6 +243,7 @@ header {
         align-items: start;
         flex-direction: column-reverse;
         height: auto;
+        margin-top: 4rem;
     }
 
     .treatments-article::before {
@@ -251,5 +253,18 @@ header {
 
     .treatments-article-title {
         font-size: 5rem;
+        padding: 4rem 0;
+    }
+
+    .treatments-article-paragraph {
+        padding-bottom: 5rem;
+    }
+
+    .treatments-wrapper-title {
+        padding-bottom: 2rem;
+    }
+
+    .treatments-icono {
+        margin: auto;
     }
 }
