@@ -7,31 +7,34 @@
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
-    <header>
-        <section class="section_header container">
+    <header id="home">
+        <section class="section-header container">
                 <nav class="navbar">
-                    <figure class="logo_header">
-                        <img src="./images/logo_superior_azul.png" alt="logo_header">
+                    <figure class="logo-header">
+                        <a href="#home">
+                            <img src="./images/logo_superior_azul.png" alt="logo-header">
+                        </a>
                     </figure>
-                    <h1 class="title_header">
+                    <h1 class="title-header">
                         <span>Centro de</span>
                         <span>Medicina Bucodental</span>
                     </h1>
                     <ul class="menu">
-                        <li><a>NOSOTROS</a></li>
-                        <li><a>TRATAMIENTO</a></li>
-                        <li><a>CONTACTO</a></li>
-                        <li><a>FAQS</a></li>
+                        <li><a href="#about">NOSOTROS</a></li>
+                        <li><a href="#objective">OBJETIVO</a></li>
+                        <li><a href="#treatments">TRATAMIENTOS</a></li>
+                        <li><a href="#our-team">EQUIPO</a></li>
+                        <li><a href="#contact-us">CONTACTANOS</a></li>
                     </ul>
                 </nav>
                 
         </section>
-        <figure class="image_header">
+        <figure class="image-header">
             <img src="./images/imagen_superior_quirofano.jpg" alt="quirofano">
         </figure>
     </header>
     <main>
-        <section class="about-cmb">
+        <section id="about" class="about-cmb">
             <div class="container">
                 <div class="about-content">
                     <figure class="about-logo">
@@ -42,7 +45,7 @@
             
             </div>
         </section>
-        <section class="section-image">
+        <section id="objective" class="section-image">
             <article class="section-image-container container">
                 <div class="section-image-content">
                     <h2 class="section-image-title">
@@ -58,8 +61,7 @@
                 <img src="./images/imagen_nuestro_objetivo.jpg" alt="Medicos atendiendo paciente">
             </figure>
         </section>
-
-        <section class="treatments">
+        <section id="treatments" class="treatments">
             <div class="treatments-wrapper-title">
                 <h2 class="treatments-title">Tratamientos</h2>
             </div>
@@ -129,7 +131,7 @@
             </div>
         </section>
 
-        <section class="section-image">
+        <section id="our-team" class="section-image">
             <article class="section-image-container container">
                 <div class="section-image-content">
                     <h2 class="section-image-title">
@@ -146,7 +148,7 @@
             </figure>
         </section>
 
-        <section class="contact-us container">
+        <section id="contact-us" class="contact-us container">
             <article class="contact-head">
                 <h2 class="title-contact-us">
                     <span>Contacta</span>
@@ -172,6 +174,23 @@
         </section>
     </main>
     <footer>
+        <section class="footer container">
+            <nav class="navbar-footer ">
+                <figure class="logo-footer">
+                    <a href="#home">
+                        <img src="./images/logo_footer.png" alt="logo-footer">
+                    </a>
+                </figure>
+                <ul class="menu menu-footer">
+                    <li><a class="footer-link" href="#about">NOSOTROS</a></li>
+                    <li><a class="footer-link" href="#objective">OBJETIVO</a></li>
+                    <li><a class="footer-link" href="#treatments">TRATAMIENTOS</a></li>
+                    <li><a class="footer-link" href="#our-team">EQUIPO</a></li>
+                    <li><a class="footer-link" href="#contact-us">CONTACTANOS</a></li>
+                </ul>
+            </nav>
+            <p class="info-footer">&copy; Aviso legal. Política de privacidad. Uso de cookies.</p>
+        </section>
     </footer>
 </body>
 </html>
