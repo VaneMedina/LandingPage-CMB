@@ -96,9 +96,9 @@ header {
 }
 
 .about-paragraph {
-    font-size: 1.438rem;
+    font-size: 2rem;
     margin: auto;
-    max-width: 40.625rem;
+    max-width: 50rem;
     text-align: center;
 }
 
@@ -108,7 +108,7 @@ header {
     }
 }
 
-/* Our objective */
+/* Our objective and Our team */
 
 .section-image {
     background-color: var(--color-gray);
@@ -256,12 +256,21 @@ header {
 
 .treatments-article-paragraph {
     font-size: 1.5rem;
-    max-width: 32.438rem;
 }
 
 .treatments-icono {
     height: 6.25rem;
     width: 6.25rem;
+}
+
+@media screen and (min-width: 767px) {
+    .treatments-article-paragraph {
+        max-width: 32.438rem;
+    }
+
+    .title-desktop { display: block; }
+
+    .title-mobile { display: none; }
 }
 
 @media screen and (max-width: 767px) {
@@ -274,7 +283,7 @@ header {
         align-items: start;
         flex-direction: column-reverse;
         height: auto;
-        margin-top: 4rem;
+        margin-top: 6rem;
     }
 
     .treatments-article::before {
@@ -286,6 +295,10 @@ header {
         font-size: 5rem;
         padding: 4rem 0;
     }
+
+    .title-desktop { display: none; }
+
+    .title-mobile { display: block; }
 
     .treatments-article-paragraph {
         padding-bottom: 5rem;
@@ -337,7 +350,7 @@ header {
     width: 6.25rem;
 }
 
-form{
+form {
     margin-top: 7rem;
     display: flex;
     flex-direction: row;
