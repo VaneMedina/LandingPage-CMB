@@ -68,10 +68,17 @@ img {
     color: var(--color-white);
 }
 
+<<<<<<< HEAD
+.center {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+=======
 button {
     border: none;
     cursor: pointer;
     background-color: transparent;
+>>>>>>> e7af4df84aeb157dba28e7cd3b9967ae6bc0db17
 }
 
 
