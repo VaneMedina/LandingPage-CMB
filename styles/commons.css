@@ -62,6 +62,12 @@ img {
     color: var(--color-white);
 }
 
+.center {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
 
 @media screen and (max-width: 767px) {
     html {
