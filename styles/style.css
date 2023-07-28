@@ -276,6 +276,7 @@ header {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    margin-bottom: 7rem;
 }
 
 .contact-head {
@@ -388,5 +389,60 @@ form{
 
     textarea {
         min-height: 19.625rem;
+    }
+}
+
+/* Section Footer */
+
+.logo-footer {
+    width: 8.813rem;
+    height: 2.375rem;
+}
+
+.navbar-footer {
+    padding-bottom: 5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-link {
+    color: var(--color-white);
+    font-weight: 400;
+}
+
+.info-footer {
+    color: var(--color-white);
+    text-align: end;
+}
+
+@media screen and (max-width: 767px) {
+    .footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 3rem 0 2rem 0;
+    }
+
+    .navbar-footer {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+    }
+
+    .logo-footer {
+        display: flex;
+        align-self: center;
+        margin-bottom: 3rem;
+    }
+
+    .menu li {
+        border-bottom: .01rem solid var(--color-white);
+    }
+
+    .info-footer {
+        font-size: .813rem;
     }
 }
