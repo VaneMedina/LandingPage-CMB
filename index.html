@@ -3,8 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Centro odontologico especializado">
     <title>CMB</title>
-    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;400;500&display=swap" rel="stylesheet">
+    <link rel="preload" href="./styles/style.css" as="style" onload="this.rel='stylesheet'">
 </head>
 <body>
     <header id="home">
@@ -20,18 +24,20 @@
                         <span>Medicina Bucodental</span>
                     </h1>
                     <ul class="menu">
-                        <li><a href="#about">NOSOTROS</a></li>
-                        <li><a href="#objective">OBJETIVO</a></li>
-                        <li><a href="#treatments">TRATAMIENTOS</a></li>
-                        <li><a href="#our-team">EQUIPO</a></li>
-                        <li><a href="#contact-us">CONTACTANOS</a></li>
+                        <li><a class="nav-link" href="#about">NOSOTROS</a></li>
+                        <li><a class="nav-link" href="#objective">OBJETIVO</a></li>
+                        <li><a class="nav-link" href="#treatments">TRATAMIENTOS</a></li>
+                        <li><a class="nav-link" href="#our-team">EQUIPO</a></li>
+                        <li><a class="nav-link" href="#contact-us">CONTACTANOS</a></li>
                     </ul>
                 </nav>
                 
         </section>
-        <figure class="image-header">
+
+        <picture class="image-header">
+            <source srcset="./images/webp/imagen_superior_quirofano.webp" type="image/webp">
             <img src="./images/imagen_superior_quirofano.jpg" alt="quirofano">
-        </figure>
+        </picture>
     </header>
     <main>
         <section id="about" class="about-cmb">
@@ -56,10 +62,10 @@
                     <a class="btn-border" href="#">SABER MÁS</a>
                 </div>
             </article>
-
-            <figure class="objective-media">
-                <img src="./images/imagen_nuestro_objetivo.jpg" alt="Medicos atendiendo paciente">
-            </figure>
+                <picture class="objective-media">
+                    <source srcset="./images/webp/imagen_nuestro_objetivo.webp" type="image/webp" alt="Medicos atendiendo paciente">
+                    <img src="./images/imagen_nuestro_objetivo.jpg" alt="Medicos atendiendo paciente">
+                </picture>
         </section>
         <section id="treatments" class="treatments">
             <div class="treatments-wrapper-title">
@@ -145,10 +151,10 @@
                     <a class="btn-border" href="#">SABER MÁS</a>
                 </div>
             </article>
-
-            <figure class="team-media">
+            <picture class="objective-media">
+                <source srcset="./images/webp/imagen_equipo.webp" type="image/webp" alt="Medicos atendiendo paciente">
                 <img src="./images/imagen_equipo.jpg" alt="Medicos atendiendo paciente">
-            </figure>
+            </picture>
         </section>
 
         <section id="contact-us" class="contact-us container">
@@ -163,12 +169,12 @@
             </article>
             <article class="contact-form">
                 <form action="localhost::5000" method="post">
-                    <input class="input-form" type="text" placeholder="Nombre*">
-                    <input class="input-form" type="text" placeholder="Apellidos*">
-                    <input class="input-form" type="email" placeholder="Mail*">
-                    <input class="input-form" type="number" placeholder="Teléfono*">
-                    <input class="input-form" type="text" placeholder="Asunto*">
-                    <textarea class="input-form" cols="30" rows="10" placeholder="Texto*"></textarea>
+                    <input class="input-form" type="text" name="name" id="name" autocomplete="given-name" placeholder="Nombre*">
+                    <input class="input-form" type="text" name="lastname" id="lastname" autocomplete="family-name" placeholder="Apellidos*">
+                    <input class="input-form" type="email" name="email" id="email" autocomplete="off" placeholder="Mail*">
+                    <input class="input-form" type="number" name="phone" id="phone" autocomplete="off" placeholder="Teléfono*">
+                    <input class="input-form" type="text" name="affair" placeholder="Asunto*">
+                    <textarea class="input-form" cols="30" rows="10" name="message" placeholder="Texto*"></textarea>
                     <div class="send-btn">
                         <button class="btn-submit" type="submit">ENVIAR</button>
                     </div>
@@ -185,11 +191,11 @@
                     </a>
                 </figure>
                 <ul class="menu menu-footer">
-                    <li><a class="footer-link" href="#about">NOSOTROS</a></li>
-                    <li><a class="footer-link" href="#objective">OBJETIVO</a></li>
-                    <li><a class="footer-link" href="#treatments">TRATAMIENTOS</a></li>
-                    <li><a class="footer-link" href="#our-team">EQUIPO</a></li>
-                    <li><a class="footer-link" href="#contact-us">CONTACTANOS</a></li>
+                    <li><a class="nav-link footer-link" href="#about">NOSOTROS</a></li>
+                    <li><a class="nav-link footer-link" href="#objective">OBJETIVO</a></li>
+                    <li><a class="nav-link footer-link" href="#treatments">TRATAMIENTOS</a></li>
+                    <li><a class="nav-link footer-link" href="#our-team">EQUIPO</a></li>
+                    <li><a class="nav-link footer-link" href="#contact-us">CONTACTANOS</a></li>
                 </ul>
             </nav>
             <p class="info-footer">&copy; Aviso legal. Política de privacidad. Uso de cookies.</p>

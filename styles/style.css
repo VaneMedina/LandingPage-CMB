@@ -1,4 +1,3 @@
-@import url('./fonts.css');
 @import url('./commons.css');
 @import url('./variables.css');
 
@@ -391,6 +390,7 @@ form {
     background-color: var(--color-blue);
     color: var(--color-white);
     font-size: 1rem;
+    border: .1rem solid transparent;
 }
 
 @media screen and (max-width: 767px) {
